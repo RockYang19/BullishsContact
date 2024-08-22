@@ -1,0 +1,44 @@
+{
+  "name": "bullishs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy:l2:test": "npx hardhat run --network arb-sepolia scripts/deployment.ts",
+    "verify:l2:test": "npx hardhat run --network arb-sepolia scripts/verifyContract.ts",
+    "deploy:bitlayer": "npx hardhat run --network bitlayer scripts/deployment_prod.ts",
+    "verify:bitlayer": "npx hardhat run --network bitlayer scripts/verifyContract.ts",
+    "deploy:optopia": "npx hardhat run --network optopia scripts/deployment_prod.ts",
+    "verify:optopia": "npx hardhat run --network optopia scripts/verifyContract.ts",
+    "deploy:nal": "npx hardhat run --network nal scripts/deployment_prod.ts",
+    "deploy:merlin": "npx hardhat run --network merlin scripts/deployment_prod.ts",
+    "verify:merlin": "npx hardhat run --network merlin scripts/verifyContract.ts"
+  },
+  "author": "Alan",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.3",
+    "@typechain/hardhat": "^9.1.0",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.4",
+    "hardhat-gas-reporter": "^1.0.9",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.0.2",
+    "@thundernetworkrad/readline-sync": "^2023.3.13-1",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.5.0",
+    "dotenv": "^16.0.3",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.2"
+  }
+}
